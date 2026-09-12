@@ -1,0 +1,8 @@
+.github/workflows/
+node_modules/
+*.log
+.DS_Store
+build/
+dist/
+.env
+.env.local
