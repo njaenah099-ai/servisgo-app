@@ -10,14 +10,15 @@ root.render(
   </React.StrictMode>
 );
 
+// Register Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/serviceWorker.js')
       .then(registration => {
-        console.log('[App] Service Worker registered:', registration);
+        console.log('Service Worker berhasil terdaftar:', registration);
       })
       .catch(error => {
-        console.log('[App] Service Worker registration failed:', error);
+        console.log('Service Worker registrasi gagal:', error);
       });
   });
 }
